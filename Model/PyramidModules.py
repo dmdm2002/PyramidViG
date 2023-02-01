@@ -21,7 +21,7 @@ class Stem(nn.Module):
             nn.BatchNorm2d(out_channel),
             activation(),
 
-            nn.Conv2d(out_channel, out_channel, kernel_size=3, stride=2, padding=1),
+            nn.Conv2d(out_channel, out_channel, kernel_size=3, stride=1, padding=1),
             nn.BatchNorm2d(out_channel),
         )
 
